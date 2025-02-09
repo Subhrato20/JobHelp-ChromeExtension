@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Word Highlighter</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        min-width: 260px;
+        margin: 0;
+        padding: 0.5rem;
+      }
+      #word-input {
+        width: 100%;
+        padding: 6px;
+        box-sizing: border-box;
+      }
+      #words-list {
+        margin-top: 0.5rem;
+        border: 1px solid #ccc;
+        min-height: 40px;
+        padding: 0.5rem;
+      }
+      .word-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f0f0f0;
+        padding: 4px;
+        margin-bottom: 4px;
+      }
+      .remove-btn {
+        background: #ff5555;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 2px 6px;
+        font-size: 0.8rem;
+      }
+      #toggle-button {
+        margin-top: 1rem;
+        width: 100%;
+        padding: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Multiple Word Highlighter</h3>
+    <input type="text" id="word-input" placeholder="Enter a word" />
+    <button id="add-button">Add Word</button>
+
+    <div id="words-list"></div>
+
+    <button id="toggle-button">Turn ON</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
